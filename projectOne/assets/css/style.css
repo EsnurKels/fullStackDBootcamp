@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.large-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 3.5rem;
+    color: #343a40;
+}
+
+.medium-title {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.container {
+    width: 100%;
+    max-width: 2560px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-4 {
+    width: 20%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bd5d38;
+}
+
+img[alt="profile"] {
+    width: 50%;
+    border: 8px solid #ffffff48;
+    border-radius: 100%;
+    margin: 10px auto;
+}
+
+.navbar {
+    width: 100%;
+    list-style-type: none;
+    padding: 0px;
+    margin: 10px auto;
+}
+
+.navbar li a {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: .6;
+    color: #fff;
+    padding: 8px;
+}
+
+.navbar li a:hover {
+    opacity: 1;
+}
+
+.col-8 {
+    width: 80%;
+}
+
+#about, #experience, #education, #skills, #interests, #awards {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #b4b4b4;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#experience, #education {
+    padding-bottom: 40px;
+}
+
+/* About Css */
+
+#about h1 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #343a40;
+}
+
+#about h1 > span {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #bd5d38;
+}
+
+#about h3 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+
+#about a {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 500;
+    color: #bd5d38;
+}
+
+#about p {
+    font-size: 18.4px;
+    color: #6c757d;
+    padding: 30px 0 30px 0;
+}
+
+#about .social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+#about .social-media a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 50em;
+    color: #fff;
+    background-color: #495057;
+    margin-right: 20px;
+}
+
+#about .social-media a:hover {
+    background-color: #bd5d38;
+}
+
+/* Experience Css */
+
+#experience .info-box {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#experience .info-box h4 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+#experience .info-box p {
+    color: #6c757d;
+}
+
+#experience .info-box .company-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experience .info-box .company-info h3 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 32px;
+    color: #343a40;
+}
+
+#experience .info-box .company-info p {
+    font-size: 16px;
+    color: #bd5d38;
+}
+
+/* Education Css */
+
+#education .info-box {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#education .info-box h4 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+#education .info-box p {
+    color: #6c757d;
+}
+
+#education .info-box .education-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#education .info-box .education-info h3 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 32px;
+    color: #343a40;
+}
+
+#education .info-box .education-info p {
+    font-size: 16px;
+    color: #bd5d38;
+}
+
+/* Skills Css */
+
+#skills .skill-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: #6c757d;
+    padding: 0;
+}
+
+#skills .skill-list li i {
+    font-size: 45px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+}
+
+#skills .workflow-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: #6c757d;
+    padding: 1rem;
+}
+
+#skills .workflow-list i {
+    color: #6c757d;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+/* Interests Css */
+
+#interests > p {
+    margin-bottom: 20px;
+}
+
+/* Awards Css */
+
+#awards .awards-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    list-style-type: none;
+}
+
+#awards .awards-list li {
+    color: #6c757d;
+    padding-bottom: 5px;
+}
+
+#awards .awards-list i {
+    color: #ffcb32;
+    padding-right: 5px;
+}
