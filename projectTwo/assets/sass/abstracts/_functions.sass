@@ -1,0 +1,5 @@
+$pages : main, about, post, contact
+
+@each $page in $pages 
+    .full-img-#{$page} 
+        background-image: url(../img/#{$page}-banner.jpg)

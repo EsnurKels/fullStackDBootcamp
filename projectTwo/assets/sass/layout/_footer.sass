@@ -1,0 +1,29 @@
+.footer
+    padding: 50px 0 65px 0
+    ul
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin: 30px 0
+        width: 300px
+        li a
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            font-size: 30px
+            background-color: $color-b2
+            color: $color-w
+            width: 35px
+            height: 35px
+            padding: 8px
+            border-radius: 50em
+            text-decoration: none
+            &:hover
+                background-color: $color-blue
+    p
+        text-align: center
+        @include pxToRem(14)
+        color: $color-gray
+        font-family: $lora

@@ -1,0 +1,29 @@
+.full-img
+    filter: grayscale(50%)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+.opak
+    background-color: $color-b2
+    width: 100%
+    opacity: .5
+    max-width: $container-full
+    @include fixid(flex, column)
+    @include item(center, center)
+.banner
+    padding: 200px 0
+    .banner-title
+        @include pxToRem(80)
+        color: $color-w
+        font-weight: 800
+        text-align: center
+        line-height: 1.2
+        margin-bottom: 8px
+    .banner-text
+        @include pxToRem(24)
+        color: $color-w
+        font-weight: 300
+        line-height: 1.1
+        display: block
+        margin: 10px 0
+        text-align: center

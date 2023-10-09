@@ -1,0 +1,22 @@
+.navbar
+    @include fixid(flex, row)
+    @include item(space-between, center)
+    a
+        @include pxToRem(20)
+        font-weight: 800
+        text-decoration: none
+        color: $color-w
+        padding: 10px 20px
+        &:hover
+            opacity: .8
+    ol
+        @include fixid(flex, row)
+        text-transform: uppercase
+        li a
+            @include pxToRem(12)
+            font-weight: 800
+            letter-spacing: 1px
+            padding: 10px 20px
+            color: $color-w
+            &:hover
+                opacity: .8

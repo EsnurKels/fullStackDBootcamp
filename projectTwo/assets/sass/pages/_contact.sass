@@ -1,0 +1,23 @@
+.contact
+    max-width: 760px
+    width: 100%
+    p
+        @include pxToRem(20)
+        font-family: $lora
+        line-height: 1.5
+    form
+        display: flex
+        flex-direction: column
+        margin: 50px auto
+        label
+            font-family: $lora
+            @include pxToRem(21)
+            color: $color-gray
+            line-height: 1.5
+        input
+            margin-bottom: 30px
+            border: 0
+            border-bottom: 1px solid $color-gray2
+        textarea
+            border: 0
+            border-bottom: 1px solid $color-gray2
