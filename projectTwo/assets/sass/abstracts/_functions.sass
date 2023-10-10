@@ -1,5 +1,25 @@
 $pages : main, about, post, contact
-
 @each $page in $pages 
     .full-img-#{$page} 
         background-image: url(../img/#{$page}-banner.jpg)
+
+$flex-direction : column, row
+@each $f-direction in $flex-direction
+    .fd-#{$f-direction}
+        flex-direction: $f-direction
+     
+$display : flex, block
+@each $displays in $display
+    .d-#{$displays}
+        display: $displays
+     
+$justify-content : center, space-between, end
+@each $jc in $justify-content
+    .jc-#{$jc}
+        justify-content: $jc
+     
+$align-item : center
+@each $ai in $align-item
+    .ai-#{$ai}
+        align-items: $ai
+     

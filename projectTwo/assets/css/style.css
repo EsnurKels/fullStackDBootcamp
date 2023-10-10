@@ -11,6 +11,30 @@
 .full-img-contact {
   background-image: url(../img/contact-banner.jpg); }
 
+.fd-column {
+  flex-direction: column; }
+
+.fd-row {
+  flex-direction: row; }
+
+.d-flex {
+  display: flex; }
+
+.d-block {
+  display: block; }
+
+.jc-center {
+  justify-content: center; }
+
+.jc-space-between {
+  justify-content: space-between; }
+
+.jc-end {
+  justify-content: end; }
+
+.ai-center {
+  align-items: center; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,6 +79,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+input:focus {
+  outline: none; }
+
+textarea:focus {
+  outline: none; }
+
 body {
   font-family: "Open Sans", sans-serif; }
 
@@ -83,11 +113,7 @@ body {
 
 .container-full {
   width: 100%;
-  max-width: 2560px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  max-width: 2560px; }
 
 .container {
   width: 100%;
@@ -186,33 +212,28 @@ body {
     color: #6c757d;
     font-family: "Lora", serif; }
 
-.box-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .box-container .box {
-    width: 100%;
-    max-width: 760px;
+.box {
+  width: 100%;
+  max-width: 760px;
+  margin-bottom: 10px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .box h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-top: 30px;
     margin-bottom: 10px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .box-container .box h2 {
-      font-size: 2.25rem;
-      font-weight: 800;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      line-height: 1.2; }
-    .box-container .box h3 {
-      font-size: 1.75rem;
-      font-weight: 300;
-      margin: 0 0 10px;
-      line-height: 1.1; }
-    .box-container .box .box-time p {
-      font-family: "Lora", serif;
-      font-style: italic;
-      color: #6c757d;
-      line-height: 1.5; }
+    line-height: 1.2; }
+  .box h3 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin: 0 0 10px;
+    line-height: 1.1; }
+  .box .box-time p {
+    font-family: "Lora", serif;
+    font-style: italic;
+    color: #6c757d;
+    line-height: 1.5; }
 
 .about {
   max-width: 760px;
