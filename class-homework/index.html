@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class in Homework</title>
+</head>
+<body>
+    <script>
+        const adres = 'https://northwind.vercel.app/api/orders';
+
+        fetch(adres)
+        .then(res => res.json())
+        .then(data => {
+            const ul = document.createElement('ul');
+
+            for (const order of data) {
+            const li = document.createElement('li');
+            li.innerHTML = order.customerId;
+            ul.appendChild(li);
+            }
+
+            document.body.appendChild(ul);
+        });
+    </script>
+</body>
+</html>
